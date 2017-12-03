@@ -497,7 +497,7 @@ plt.show()
 ```
 
 
-![png](output_20_0.png)
+![png](images/output_20_0.png)
 
 
 Although there are some peaks in the time data relating to fraudulent transactions, it's difficult to tell at a glance if there is a trend that will help us with our predictions.
@@ -529,7 +529,7 @@ plt.show()
 ```
 
 
-![png](output_23_0.png)
+![png](images/output_23_0.png)
 
 
 
@@ -557,7 +557,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![png](images/output_24_0.png)
 
 
 Here we can see that while the fradulent transaction trend is similar to the overall trend, it drops off much more rapidly, and we typically don't see any fraudulent transactions above ~$1,000 with the exception of a few outliers.
@@ -767,7 +767,7 @@ plt.show()
 ```
 
 
-![png](output_37_0.png)
+![png](images/output_37_0.png)
 
 
 By looking at our F1 scores we can determine which subset to use, but since it looks like using all of our available features has yielded the highest F1 score so far we will proceed with the full set of features. We can visualize the accuracy of our model by looking directly at a confusion matrix, which will show us the rate of False positives or false negatives that our model has returned.
@@ -841,11 +841,11 @@ plt.show()
 ```
 
 
-![png](output_42_0.png)
+![png](images/output_42_0.png)
 
 
 
-![png](output_42_1.png)
+![png](images/output_42_1.png)
 
 
 Although we can see that our model performs quite well on predicting genuine transactions, as expected we still have room to improve with respect to our Fraudulent transaction predictions, since only ~62% of Fraudulent transactions in our CV were predicted by the model.
@@ -881,7 +881,7 @@ plt.show()
 ```
 
 
-![png](output_44_0.png)
+![png](images/output_44_0.png)
 
 
 Looking at the curve above, we should be able to achieve a higher combination of precision and recall accuracy, which would make an improvement to our model. We can choose the threshold which achieves the highest F1 score using the following:
@@ -916,7 +916,7 @@ plt.show()
 ```
 
 
-![png](output_47_0.png)
+![png](images/output_47_0.png)
 
 
 Now we can use the threshold with the maximum score to re-frame our predictions.
@@ -937,7 +937,7 @@ plt.show()
 ```
 
 
-![png](output_49_0.png)
+![png](images/output_49_0.png)
 
 
 We can see from the confusion matrix that we were able increase our True positive rate of fraud detection in our CV dataset to about ~73%. Now that we've performed some optimization, we can test the accuracy on our test dataset.
@@ -963,7 +963,7 @@ plt.show()
 ```
 
 
-![png](output_51_0.png)
+![png](images/output_51_0.png)
 
 
 This covers some of the fundamental techniques of classification, although the performance on our test set suggests that there may still room for improvement to increase the accuracy of predictions.
