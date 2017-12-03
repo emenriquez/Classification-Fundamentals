@@ -419,10 +419,6 @@ fig = go.Figure(data = [trace], layout = layout)
 iplot(fig)
 ```
 
-
-<div id="09ee877f-4cf6-4612-9943-fc693c81f208" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("09ee877f-4cf6-4612-9943-fc693c81f208", [{"type": "pie", "labels": ["Genuine", "Fraudulent"], "values": [284315, 492]}], {"title": "Distribution of Class Feature"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
-
 <img src = 'images/Distribution of Class Feature.png'>
 
 As we can see, the class variable is highly skewed, with only 0.173% of transactions being fraudulent. In order to properly evaluate the performance of our model, we will need to use a specialized metric that accounts for false positive and false negative predictions since a model that simply predicts all transactions as genuine would (on the surface) be over 99.8% accurate!
@@ -474,7 +470,7 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+![png](images/output_19_0.png)
 
 
 
