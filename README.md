@@ -44,10 +44,6 @@ import itertools
 np.random.seed(1)
 ```
 
-
-<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
-
-
 Next we will load the data and get a sense of the general structure of information available
 
 
@@ -79,19 +75,6 @@ pd.DataFrame(data = {'Feature Label': data.columns})
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -248,19 +231,6 @@ pd.DataFrame(data = {'# of Missing Data Entries': data.isnull().sum()})
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -645,10 +615,6 @@ fig = go.Figure(data = [trace1, trace2, trace3], layout = layout)
 iplot(fig)
 ```
 
-
-<div id="7989a500-73cc-4f1b-871d-cd6c96a07979" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("7989a500-73cc-4f1b-871d-cd6c96a07979", [{"type": "pie", "labels": ["Genuine", "Fraudulent"], "values": [170567, 316], "domain": {"x": [0, 0.3]}, "hole": 0.5}, {"type": "pie", "labels": ["Genuine", "Fraudulent"], "values": [56884, 78], "domain": {"x": [0.35, 0.65]}, "hole": 0.5}, {"type": "pie", "labels": ["Genuine", "Fraudulent"], "values": [56864, 98], "domain": {"x": [0.7, 1]}, "hole": 0.5}], {"title": "Distribution of Class Feature", "annotations": [{"text": "Train", "font": {"size": 20}, "showarrow": false, "x": 0.11, "y": 0.5}, {"text": "CV", "font": {"size": 20}, "showarrow": false, "x": 0.5, "y": 0.5}, {"text": "Test", "font": {"size": 20}, "showarrow": false, "x": 0.88, "y": 0.5}]}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
-
-
 <img src = 'images/Distribution of Class Feature (2).png'>
 
 ## 4. Classification Models
@@ -672,19 +638,6 @@ pd.DataFrame(data = {'Subset Features': X_train.columns[subset.get_support()]})
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
