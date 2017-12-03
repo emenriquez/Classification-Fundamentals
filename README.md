@@ -615,7 +615,7 @@ fig = go.Figure(data = [trace1, trace2, trace3], layout = layout)
 iplot(fig)
 ```
 
-<img src = 'images/Distribution of Class Feature (2).png'>
+![png](images/Distribution of Class Feature (2).png)
 
 ## 4. Classification Models
 
